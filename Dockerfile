@@ -1,5 +1,6 @@
 FROM caddy:2-builder AS builder
-RUN xcaddy build --with github.com/mholt/caddy-l4 \
+RUN xcaddy build v2.8.4 \
+  --with github.com/mholt/caddy-l4 \
   --with github.com/caddy-dns/tencentcloud
   # --with github.com/wangzexi/caddy-dynamicdns \
   # --with github.com/sagikazarmark/caddy-fs-s3
