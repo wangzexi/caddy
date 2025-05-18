@@ -8,7 +8,7 @@
 # FROM caddy:2
 # COPY --from=builder /usr/bin/caddy /usr/bin/caddy
 
-ARG CADDY_VERSION=2.6.1
+ARG CADDY_VERSION=2.10.0
 FROM caddy:${CADDY_VERSION}-builder AS builder
 
 RUN xcaddy build \
